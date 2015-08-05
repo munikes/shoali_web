@@ -41,9 +41,9 @@
             <div class="inner">
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Us</a></li>
-                  <li><a href="#">Wiki</a></li>
-                  <li><a href="#"><img class="github" src="cover_template_for_bootstrap_files/github.png"/></a></li>
+                  <!--<li class="active"><a href="#">Us</a></li>-->
+                  <li><a href="http://lab.shoali.org/w/">Wiki</a></li>
+                  <li><a href="https://github.com/munikes/shoali"><img class="github" src="cover_template_for_bootstrap_files/github.png"/></a></li>
                 </ul>
               </nav>
             </div>
@@ -55,9 +55,12 @@
           
 
     <div class="col-lg-6 col-md-offset-3">
-      <form class="form-signin">
+      <form class="form-signin" action="http://mail.shoali.org/?p=subscribe&id=1" name="subscribeform" method="post">
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="hidden" name="list[2]" value="signup">
+        <input type="hidden" name="htmlemail" value="1">
+        <input type="hidden" name="subscribe" value="yes">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Subscribe to our Newsletter</button>
       </form>
       </div>
